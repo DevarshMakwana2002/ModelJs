@@ -21,3 +21,10 @@ btnCloseModel.addEventListener('click',()=>{
     overlay.classList.add('hidden')
 })
 
+document.addEventListener("keydown",key);
+
+function key(e) {
+    console.log(`${e.key} is pressed` )
+    model.classList.add('hidden')
+    overlay.classList.add('hidden')
+}
