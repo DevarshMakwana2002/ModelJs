@@ -16,14 +16,11 @@ for(let i of btnOpenModel){
     })
 }
 
-btnCloseModel.addEventListener('click',()=>{
-    model.classList.add('hidden')
-    overlay.classList.add('hidden')
-})
+btnCloseModel.addEventListener('click',removeHidden)
 
-document.addEventListener("keydown",key);
+document.addEventListener("keydown",removeHidden);
 
-function key(e) {
+function removeHidden(e) {
     console.log(`${e.key} is pressed` )
     model.classList.add('hidden')
     overlay.classList.add('hidden')
